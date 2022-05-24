@@ -1,0 +1,52 @@
+@charset "UTF-8";
+a {
+  color: #000;
+}
+a:hover {
+  color: #000;
+}
+
+/* nav 영역 */
+.navbar {
+  padding: 0 10%;
+}
+.navbar .nav-item {
+  margin-right: 5%;
+}
+.navbar .nav-item:last-child {
+  margin-right: 0;
+}
+.navbar .nav-login {
+  padding-left: 10%;
+}
+
+/* main 영역 */
+#main .container, #main .container-fluid {
+  margin-top: 10%;
+}
+#main .container-fluid:first-child {
+  margin-top: 0;
+}
+.jumbotron {
+  background: none;
+}
+.jumbotron .lead2 {
+  color: #888;
+}
+.container > h1 {
+  position: relative;
+}
+.container > h1:before {
+  position: absolute;
+  bottom: -5%;
+  left: calc(50% - 2.5%);
+  content: '';
+  display: inline-block;
+  width: 5%;
+  height: 1.5px;
+  background: #000;
+}
+
+.carousel-item {
+  height: 100%;
+}
