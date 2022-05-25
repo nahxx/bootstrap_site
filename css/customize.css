@@ -16,10 +16,16 @@ a:hover {
 .navbar .nav-item:last-child {
   margin-right: 0;
 }
-.navbar .nav-login {
+.navbar .right-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-left: 10%;
 }
-
+.navbar .right-box .nav-cart {
+  margin-left: 10%;
+  font-size: 20px;
+}
 /* main 영역 */
 #main .container, #main .container-fluid {
   margin-top: 10%;
@@ -54,10 +60,10 @@ a:hover {
 .jumbotron .lead2, .gray {
   color: #888;
 }
-.container > h1, .container-fluid > h1 {
+.container > h1, .container-fluid > h1, .container > h2, .container-fluid > h2 {
   position: relative;
 }
-.container > h1:before, .container-fluid > h1:before {
+.container > h1:before, .container-fluid > h1:before, .container > h2:before, .container-fluid > h2:before {
   position: absolute;
   bottom: -3%;
   left: calc(50% - 2.5%);
@@ -106,7 +112,11 @@ a:hover {
 .brand a.border {
   font-size: 18px;
 }
-.magazine .col-md-3 {
+.brand .col-md-12 {
+  padding-left: 0;
+  padding-right: 0;
+}
+.magazine .col-md-6 {
   padding-left: 0;
   padding-right: 0;
 }
@@ -114,9 +124,15 @@ a:hover {
   border-bottom: 0;
 }
 .magazine .tomato {
-  color: tomato;
+  color: #dc3545;
 }
 .magazine .btn {
+  border-radius: 0;
+}
+h1.shop:before {
+  height: 0;
+}
+.shop-btn {
   border-radius: 0;
 }
 #footer .container-fluid {
