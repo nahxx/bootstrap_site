@@ -20,11 +20,13 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 10%;
 }
-.navbar .right-box .nav-cart {
-  margin-left: 10%;
-  font-size: 20px;
+.navbar .right-box > a {
+  margin-left: 20%;
+  font-size: 18px;
+}
+.dropdown-toggle:after {
+  display: none;
 }
 /* main 영역 */
 #main .container, #main .container-fluid {
@@ -134,6 +136,11 @@ h1.shop:before {
 }
 .shop-btn {
   border-radius: 0;
+}
+.page-item.active .page-link {
+  border: 1px solid #dee2e6;
+  border-bottom: 2px solid #000;
+  background: #fff;
 }
 #footer .container-fluid {
   padding-top: 2%;
